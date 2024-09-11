@@ -1,0 +1,51 @@
+---
+title: "Diabetes PredictR"
+author: "Suhas. P. K"
+date: "`r Sys.Date()`"
+output:
+  rmdformats::downcute:
+    self_contained: true
+    default_style: "dark"
+    downcute_theme: "chaos"
+---
+
+```{r libraries, warning=FALSE, message=FALSE}
+if (!require(neuralnet)){
+  install.packages("neuralnet")
+  library(neuralnet)
+}
+if (!require(caret)){
+  install.packages("caret")
+  library(caret)
+}
+if (!require(tidtverse)){
+  install.packages("tidyverse")
+  library(tidyverse)
+}
+if (!require(mlbench)){
+  install.packages("mlbench")
+  library(mlbench)
+}
+if (!require(e1071)){
+  install.packages("e1071")
+  library(e1071)
+}
+if (!require(ggplot2)){
+  install.packages("ggplot2")
+  library(ggplot2)
+}
+if (!require(ggdark)){
+  install.packages("ggdark")
+  library(ggdark)
+}
+```
+
+
+```{r}
+url <- "https://www.openml.org/data/download/22102308/dataset"
+data_file <- paste(getwd(),"diabetes.csv", sep="/")
+if (!file.exists(data_file)){
+  download.file(url = url, destfile = data_file)
+}
+```
+

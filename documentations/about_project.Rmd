@@ -1,0 +1,26 @@
+---
+title: "Diabetes PredictR doumentation"
+author: "Suhas. P. K"
+date: "`r Sys.Date()`"
+output:
+  rmdformats::downcute:
+    self_contained: true
+    default_style: "dark"
+    downcute_theme: "chaos"
+---
+
+## Project Overview
+
+Welcome to Machine Learning:  Predict Diabetes using Pima Indians Data Set. 
+
+### Objective
+In this project, I will be going to focus on four learning objectives:
+
+-    Complete a random Training and Test set from one Data source using both an R function and using Base R.
+
+-    Practice exploratory data analysis using ggplot2
+
+-    Apply a Linear Model, GBM, Random Forest model to a data set.
+
+-    Examine the results using RMSE and a Confusion Matrix.
+
